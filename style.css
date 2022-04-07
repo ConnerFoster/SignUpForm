@@ -10,7 +10,8 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
+  overflow: auto;
+  margin: 0;
 }
 
 main {
@@ -33,23 +34,22 @@ main {
 }
 
 .main {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(247, 247, 247);
   flex-grow: 1;
-  padding: 3rem;
   height: 100vh;
   padding-top: 15rem;
+  margin-top: 5rem;
 }
 
 .heading-text {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .inputs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  background-color: white;
-  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
 }
 
 .f-elements {
@@ -62,9 +62,10 @@ label {
 }
 input {
   width: 100%;
-  padding: 12px 20px;
+  padding: 6px 10px;
   margin: 8px 0;
   box-sizing: border-box;
+  font-size: 1.1rem;
 }
 
 button {
@@ -82,6 +83,16 @@ button:hover {
 }
 
 .log {
-  color: aqua;
+  color: rgb(3, 180, 180);
   cursor: pointer;
+}
+.log:hover {
+  text-decoration: underline;
+}
+
+form {
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
 }
